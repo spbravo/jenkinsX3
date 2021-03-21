@@ -8,10 +8,10 @@ spec:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - spbravo
+    environmentGitOwner: spbrvo
     gitKind: github
-    gitName: github
+    gitName: spbravo
     gitServer: https://github.com
     provider: minikube
   environments:
@@ -19,7 +19,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: $DOMAIN
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:

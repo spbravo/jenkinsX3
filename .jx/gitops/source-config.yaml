@@ -1,0 +1,17 @@
+apiVersion: gitops.jenkins-x.io/v1alpha1
+kind: SourceConfig
+metadata:
+  creationTimestamp: null
+spec:
+  jenkinsServers:
+  - groups:
+    - owner: spbravo
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: github.com-spbravo-ClientDemo
+    server: myjenkins
+  slack:
+    channel: '#jenkins-x-pipelines'
+    kind: failureOrNextSuccess
+    pipeline: release

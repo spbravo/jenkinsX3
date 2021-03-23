@@ -3,6 +3,13 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  groups:
+  - owner: spbravo
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: bootmavenjenk
+    scheduler: in-repo
   jenkinsServers:
   - groups:
     - owner: spbravo

@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: bootmavenjenk
+    - name: spbpjava11
     scheduler: in-repo
   jenkinsServers:
   - groups:
